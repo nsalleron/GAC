@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
 
     defaultConfig {
         applicationId "com.example.android.testing.notes"
@@ -17,7 +16,7 @@ android {
     buildTypes {
         debug {
             // Run code coverage reports by default on debug builds.
-            // testCoverageEnabled = true
+            testCoverageEnabled = true
         }
     }
 
